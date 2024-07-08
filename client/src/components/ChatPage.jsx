@@ -43,7 +43,7 @@ function ChatPage() {
     return setUserResponded(false)
   }, [userResponded])
 
-  const handleSendMessage = (message) => {
+  const handleSendMessage = (message, selectedFiles) => {
     setMessages((prevMessages) => [
       ...prevMessages,
       { role: "user", content: message },
